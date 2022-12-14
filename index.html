@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda | Tugas Git Nadia Koding</title>
+    <style>
+        .main {
+            padding: 0px;
+        }
+        
+        .container {
+            /* display: flex; */
+            position: relative;
+            width: 800px;
+            height: 500px;
+            background-color: #1D867A;
+        }
+        
+        .banner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 600px;
+            height: 400px;
+            transform: translate(-50%, -50%);
+            background-color: aquamarine;
+            border-radius: 30px;
+            box-shadow: 4px 3px 10px rgb(97, 220, 179), inset 10px 8px 10px rgb(176, 245, 222), 8px 10px 10px rgb(8, 145, 145), -2px -1px 10px 10px rgb(13, 193, 193);
+            background-image: url("https://images.unsplash.com/photo-1523592121529-f6dde35f079e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+            z-index: 1;
+        }
+        
+        .banner::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 620px;
+            height: 420px;
+            transform: translate(-50%, -50%);
+            border-radius: 30px;
+            /* background-image: url("https://images.unsplash.com/photo-1523592121529-f6dde35f079e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"); */
+            background-color: aquamarine;
+            z-index: -1;
+            display: block;
+            /* filter: blur(1px); */
+            opacity: 0.5;
+        }
+        
+        .inner {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 100px;
+            background-color: #1d867a2c;
+            transform: translate(-50%, -50%);
+            border-radius: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 1px 5px aquamarine;
+            font-size: 30px;
+        }
+        
+        p {
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
     <table border="1" width="980" align="center" cellpadding="10">
         <tr>
@@ -19,8 +88,17 @@
                 <a href="galeri.html">Galeri</a><br>
                 <a href="register.html">Registrasi</a><br>
             </td>
-            <td valign="top">
-                Silahkan diisi Halaman Beranda
+            <td valign="top" class="main">
+                <!-- Halaman Beranda -->
+                <div class="container">
+                    <div class="banner">
+                        <div class="inner">
+                            <h1>Indonesia Paradise</h1>
+                            <p>~Gunung Bromo~</p>
+                        </div>
+
+                    </div>
+                </div>
             </td>
         </tr>
         <tr>
@@ -28,4 +106,5 @@
         </tr>
     </table>
 </body>
+
 </html>
